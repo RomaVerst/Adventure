@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/39513db479.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/plagins/jquery.maskedinput.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top_header">
+            <div class="logo"></div>
+            <div data-callback-mobile><i class="fas fa-phone-square-alt"></i></div>
+            <div class="header_burger" data-menu-open><span class="middle_line"></span></div>
+            <div class="container">
+                <div class="m_inner" data-menu>
+                    <div class="m_item"><a href="#">О КОМПАНИИ</a></div>
+                    <div class="m_item"><a href="#">НАПРАВЛЕНИЯ</a></div>
+                    <div class="m_item"><a href="#">ОТЗЫВЫ</a></div>
+                    <div class="m_item"><a href="#">НОВОСТИ</a></div>
+                    <div class="m_item"><a href="#">КОНТАКТЫ</a></div>
+                    <div class="m_item"><a data-callback-btn href="#">Обратный звонок</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image_slider_image">
+                             <img src="img/boat.png" alt="boat">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image_slider_image">
+                            <img src="img/fog_mountain_rage.png" alt="fog mountain rage">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image_slider_image">
+                            <img src="img/ocean.png" alt="ocean">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="modal_call_back" data-modal-callback>
+            <div class="bcgr_call_back">
+                <div class="form_call_back">
+                    <span data-modal-close></span>
+                    <h2>Заполните форму</h2>
+                    <form id="form-callback" action="index.html" enctype="multipart/form-data" method="">
+                        <div class="mini_flex_form">
+                            <div class="mini_flex_form_item">
+                                <label for="name_callback">Имя</label>
+                                <input name="username" id="name_callback" type="text">
+                            </div>
+                            <div class="mini_flex_form_item">
+                                <label for="phone_callback">Телефон</label>
+                                <input name="phone" id="phone_callback" placeholder="+7 (   )    -  -  " type="tel">
+                            </div>
+                        </div>
+                        <label for="email_callback">E-mail</label>
+                        <input name="email" id="email_callback" type="email">
+                        <label for="text_calback">Задать вопрос</label>
+                        <textarea name="message_user" id="text_calback"></textarea>
+                        <p>Отправляя любые формы запросов, Вы соглашаетесь с условиями <a href="#">«Положения о конфиденциальности»</a></p>
+                        <input value="Отправить" type="submit" data-send-form-callback>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="status">
+            <div class="status-item">
+                <img src="img/circle_star.png" alt="star">
+                <h3>Спонтанно</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            </div>
+            <div class="status-item">
+                <img src="img/circle_light.png" alt="light">
+                <h3>энергично</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            </div>
+            <div class="status-item">
+                <img src="img/circle_smile.png" alt="smile">
+                <h3>весело</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            </div>
+        </div>
+        <div class="lines"></div>
+        <div class="about_us">
+            <div class="item_about">
+                <h2>О нас</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                </p>
+                <a href="#">подробнее</a>
+            </div>
+            <div class="item_about">
+                <div class="sunset"></div>
+                <div class="seat_on_rock"></div>
+            </div>
+        </div>
+        <div class="form_block">
+            <div class="bcgr_transform">
+                <div class="content_info">
+                    <div class="tabs_container">
+                        <div class="tab_btn active" data-btn="personal_info">Личные данные</div>
+                        <div class="tab_btn" data-btn="rules">правила участия</div>
+                    </div>
+                    <hr>
+                    <div class="tab_content personal_info">
+                        <h2>Заполните форму</h2>
+                        <form id="form-personal-info" action="index.html" enctype="multipart/form-data" method="">
+                            <div class="flex_form_container">
+                                <div class="form_item">
+                                    <div class="preview_img"></div>
+                                    <label data-load-label for="img_user">Загрузите фото</label><br>
+                                    <a data-load-img>Выберите файл</a><br>
+                                    <input id="img_user" type="file" style="display: none;">
+                                    <label data-name-label for="name_user">Имя</label>
+                                    <input name="username" id="name_user" type="text">
+                                    <label for="secondname_user">Фамилия</label>
+                                    <input name="secondname" id="secondname_user" type="text">
+                                    <input data-send-personal-info value="Отправить" type="submit">
+                                </div>
+                                <div class="form_item">
+                                    <label data-sex-label for="sex_user">Пол</label>
+                                    <div class="select arrow">
+                                        <span class="arrow arrow-left"></span>
+                                        <span class="arrow arrow-right"></span>
+                                        <select name="sex" id="sex_user">
+                                            <option value="null" default>не выбран</option>
+                                            <option value="female">женский</option>
+                                            <option value="male">мужской</option>
+                                        </select>
+                                    </div>
+                                    <label for="phone_user">Телефон</label>
+                                    <input name="phone" id="phone_user" placeholder="+7 (   )    -  -  " type="tel">
+                                    <label for="email_user">E-mail</label>
+                                    <input name="email" id="email_user" type="email">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab_content rules">
+                        <h2>будь собой</h2>
+                        <p>
+                            t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                        </p>
+                        <ul>
+                            <li><span>Lorem Ipsum is simply dummy text of the printing and typesetting</span></li>
+                            <li><span>Lorem Ipsum is simply dummy text of the printing and typesetting</span></li>
+                            <li><span>Lorem Ipsum is simply dummy text of the printing and typesetting</span></li>
+                        </ul>
+                        <h3>Удачи в твоих начинаниях)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="menu_bottom">
+            <div class="m_inner">
+                <div class="m_item"><a href="#">О КОМПАНИИ</a></div>
+                <div class="m_item"><a href="#">НАПРАВЛЕНИЯ</a></div>
+                <div class="m_item"><a href="#">ОТЗЫВЫ</a></div>
+                <div class="m_item"><a href="#">НОВОСТИ</a></div>
+                <div class="m_item"><a href="#">КОНТАКТЫ</a></div>
+            </div>
+        </div>
+        <div class="social">
+            <span><i class="fab fa-vk"></i></span>
+            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-odnoklassniki"></i></span>
+        </div>
+    </footer>
+</body>
+</html>
